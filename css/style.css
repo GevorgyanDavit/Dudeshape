@@ -10,7 +10,7 @@ body {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 5px;
+  padding: 10px;
 }
 
 .nav {
@@ -71,7 +71,6 @@ body {
 .header .header__left h1 {
   font-size: 54px;
   font-weight: 500;
-  line-height: 70px;
   -moz-columns: #000000;
        columns: #000000;
   margin: 0px;
@@ -132,6 +131,106 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+  }
+}
+
+.main__section .main__nav {
+  margin: 130px 134px 0px 134px;
+}
+.main__section .main__text1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 130px;
+}
+.main__section .main__text1 h2 {
+  font-size: 54px;
+  font-weight: 500;
+  -moz-columns: #000000;
+       columns: #000000;
+  margin: 0px;
+}
+.main__section .main__text1 p {
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 32px;
+  color: #555555;
+}
+.main__section .main__text1 a {
+  font-size: 24px;
+  font-weight: 500;
+  color: #222222;
+}
+.main__section .main__productCub1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.main__section .main__productCub1 .productCub1__item {
+  border: 1px solid rgba(104, 90, 82, 0.19);
+}
+.main__section .main__productCub1 .productCub1__item .productCub1__item__item {
+  position: relative;
+  padding: 15px 32px 32px 32px;
+}
+.main__section .main__productCub1 .productCub1__item .productCub1__item__item h3 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #222222;
+  margin: 0px;
+}
+.main__section .main__productCub1 .productCub1__item .productCub1__item__item span {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #555555;
+}
+.main__section .main__productCub1 .productCub1__item .productCub1__item__item .productCub1__btn {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  margin-top: 30px;
+}
+.main__section .main__productCub1 .productCub1__item .productCub1__item__item .productCub1__btn a {
+  padding: 16px 32px;
+  text-decoration: none;
+}
+.main__section .main__productCub1 .productCub1__item .productCub1__item__item .productCub1__btn a:nth-child(1) {
+  color: #FFFFFF;
+  background-color: #402F2C;
+}
+.main__section .main__productCub1 .productCub1__item .productCub1__item__item .productCub1__btn a:nth-child(2) {
+  color: #402F2C;
+  border: 1px solid #555555;
+}
+.main__section .main__productCub1 .productCub1__item .productCub1__item__item p {
+  position: absolute;
+  right: 32px;
+  bottom: 44px;
+  margin: 0px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #222222;
+}
+@media screen and (max-width: 870px) {
+  .main__section .main__text1 h2 {
+    font-size: 40px;
+  }
+  .main__section .main__text1 p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 1270px) {
+  .main__section .main__productCub1 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .main__section .main__text1 {
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
   }
 }
