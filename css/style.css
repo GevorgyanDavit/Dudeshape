@@ -51,11 +51,34 @@ body {
   padding-right: 103px;
 }
 @media screen and (max-width: 870px) {
+  .nav {
+    justify-content: space-around;
+  }
   .nav .nav__menus .nav__full_menu {
     display: none;
   }
   .nav .nav__menus .nav__mobile_menu {
     display: block;
+  }
+  .nav .nav__icon {
+    padding-right: 0px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .nav {
+    justify-content: space-around;
+  }
+  .nav .nav__logo svg {
+    width: 100px;
+  }
+  .nav .nav__mobile_menu svg {
+    width: 30px;
+  }
+  .nav .nav__icon {
+    padding-right: 0px;
+  }
+  .nav .nav__icon .one {
+    width: 15px;
   }
 }
 
@@ -113,10 +136,14 @@ body {
   cursor: pointer;
 }
 @media screen and (max-width: 870px) {
+  .header {
+    justify-content: center;
+    margin-top: 40px;
+  }
   .header .header__right {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 10%);
+    transform: translate(-120%, 10%);
   }
   .header .header__right .header__right__cosmimg img {
     width: 350px;
@@ -132,6 +159,30 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+}
+@media screen and (max-width: 520px) {
+  .header .header__left h1 {
+    font-size: 40px;
+  }
+  .header .header__left p {
+    font-size: 10px;
+    line-height: 20px;
+    margin: 20px 0;
+  }
+  .header .header__left .header__left__input {
+    max-width: 326px;
+    max-height: 36px;
+    margin-bottom: 40px;
+  }
+  .header .header__left .header__left__btns a {
+    padding: 10px 26px;
+    font-size: 10px;
+  }
+  .header .header__right {
+    top: 50%;
+    left: 50%;
+    transform: translate(-70%, 10%);
   }
 }
 
@@ -214,24 +265,103 @@ body {
   color: #222222;
 }
 @media screen and (max-width: 870px) {
+  .main__section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main__section .main__nav {
+    text-align: center;
+    margin-top: 100px;
+  }
+  .main__section .main__nav svg {
+    max-width: 550px;
+  }
+  .main__section .main__text1 {
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
   .main__section .main__text1 h2 {
     font-size: 40px;
   }
   .main__section .main__text1 p {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 20px;
   }
-}
-@media screen and (max-width: 1270px) {
+  .main__section .main__text1 a {
+    font-size: 16px;
+  }
   .main__section .main__productCub1 {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    width: 500px;
+  }
+  .main__section .main__productCub1 img {
+    width: 500px;
+  }
+  .main__section .main__productCub1 .productCub1__item .productCub1__item__item h3 {
+    font-size: 30px;
+  }
+  .main__section .main__productCub1 .productCub1__item .productCub1__item__item span {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .main__section .main__productCub1 .productCub1__item .productCub1__item__item .productCub1__btn a {
+    padding: 8px 16px;
+  }
+  .main__section .main__productCub1 .productCub1__item .productCub1__item__item p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .main__section .main__nav {
+    text-align: center;
+    margin-top: 100px;
+  }
+  .main__section .main__nav svg {
+    max-width: 400px;
   }
   .main__section .main__text1 {
-    flex-wrap: wrap;
-    justify-content: center;
+    margin-top: 80px;
     text-align: center;
+  }
+  .main__section .main__text1 h2 {
+    font-size: 30px;
+  }
+  .main__section .main__text1 p {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .main__section .main__text1 a {
+    font-size: 12px;
+  }
+  .main__section .main__productCub1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 400px;
+    text-align: center;
+  }
+  .main__section .main__productCub1 img {
+    width: 400px;
+  }
+  .main__section .main__productCub1 .productCub1__item .productCub1__item__item h3 {
+    font-size: 25px;
+  }
+  .main__section .main__productCub1 .productCub1__item .productCub1__item__item span {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .main__section .main__productCub1 .productCub1__item .productCub1__item__item .productCub1__btn a {
+    font-size: 10px;
+    padding: 8px 16px;
+  }
+  .main__section .main__productCub1 .productCub1__item .productCub1__item__item p {
+    font-size: 15px;
   }
 }
 

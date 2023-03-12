@@ -75,6 +75,8 @@ body {
   }
 
   @media screen and (max-width:$mobileL) {
+    justify-content: space-around;
+
     .nav__menus {
       .nav__full_menu {
         display: none;
@@ -82,7 +84,34 @@ body {
 
       .nav__mobile_menu {
         display: block;
-        // cursor: pointer; chi ashxatum
+      }
+    }
+
+    .nav__icon {
+      padding-right: 0px;
+    }
+  }
+
+  @media screen and (max-width: $mobileM) {
+    justify-content: space-around;
+
+    .nav__logo {
+      svg {
+        width: 100px;
+      }
+    }
+
+    .nav__mobile_menu {
+      svg {
+        width: 30px;
+      }
+    }
+
+    .nav__icon {
+      padding-right: 0px;
+
+      .one {
+        width: 15px;
       }
     }
   }
@@ -150,10 +179,13 @@ body {
   }
 
   @media screen and (max-width: $mobileL ) {
+    justify-content: center;
+    margin-top: 40px;
+
     .header__right {
       top: 50%;
       left: 50%;
-      transform: translate(-50%, 10%);
+      transform: translate(-120%, 10%);
     }
 
     .header__right {
@@ -181,7 +213,38 @@ body {
     }
   }
 
+  @media screen and (max-width: $mobileM) {
+    .header__left {
+      h1 {
+        font-size: 40px;
+      }
 
+      p {
+        font-size: 10px;
+        line-height: 20px;
+        margin: 20px 0;
+      }
+
+      .header__left__input {
+        max-width: 326px;
+        max-height: 36px;
+        margin-bottom: 40px;
+      }
+
+      .header__left__btns {
+        a {
+          padding: 10px 26px;
+          font-size: 10px;
+        }
+      }
+    }
+
+    .header__right {
+      top: 50%;
+      left: 50%;
+      transform: translate(-70%, 10%);
+    }
+  }
 }
 
 .main__section {
@@ -279,29 +342,137 @@ body {
   }
 
   @media screen and (max-width:$mobileL ) {
-    .main__text1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .main__nav {
+      text-align: center;
+      margin-top: 100px;
+
+      svg {
+        max-width: 550px;
+      }
+    }
+
+    .main__text1 {
+      margin-top: 100px;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
       h2 {
         font-size: 40px;
       }
 
       p {
-        font-size: 16px;
+        font-size: 15px;
         line-height: 20px;
+      }
+
+      a {
+        font-size: 16px;
+      }
+    }
+
+    .main__productCub1 {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+      width: 500px;
+
+      img {
+        width: 500px;
+      }
+
+      .productCub1__item {
+        .productCub1__item__item {
+          h3 {
+            font-size: 30px;
+          }
+
+          span {
+            font-size: 15px;
+            line-height: 20px;
+          }
+
+          .productCub1__btn {
+            a {
+              padding: 8px 16px;
+            }
+          }
+
+          p {
+            font-size: 20px;
+          }
+        }
       }
     }
   }
 
-  @media screen and (max-width:1270px ) {
-    .main__productCub1 {
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
+  @media screen and (max-width:$mobileM) {
+    .main__nav {
+      text-align: center;
+      margin-top: 100px;
+
+      svg {
+        max-width: 400px;
+      }
     }
 
     .main__text1 {
-      flex-wrap: wrap;
-      justify-content: center;
+      margin-top: 80px;
       text-align: center;
+
+      h2 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 10px;
+        line-height: 20px;
+      }
+
+      a {
+        font-size: 12px;
+      }
+    }
+
+    .main__productCub1 {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 400px;
+      text-align: center;
+
+      img {
+        width: 400px;
+      }
+
+      .productCub1__item {
+        .productCub1__item__item {
+          h3 {
+            font-size: 25px;
+          }
+
+          span {
+            font-size: 10px;
+            line-height: 10px;
+          }
+
+          .productCub1__btn {
+            a {
+              font-size: 10px;
+              padding: 8px 16px;
+            }
+          }
+
+          p {
+            font-size: 15px;
+          }
+        }
+      }
     }
   }
 }
