@@ -171,6 +171,12 @@ body {
   .header__right {
     position: relative;
 
+    .header__right__cosmimg {
+      img {
+        width: 100%;
+      }
+    }
+
     .header__right__vecimg {
       position: absolute;
       bottom: 0px;
