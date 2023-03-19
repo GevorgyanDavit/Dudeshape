@@ -347,6 +347,129 @@ body {
     }
   }
 
+  .main__points {
+    margin: 130px 0px;
+    padding: 58px 0px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #FDF8F5;
+
+    .main__points__point {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        margin: 0;
+        color: $color555;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 30px;
+      }
+    }
+  }
+
+  .main__productCub2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+
+    .main__productCub2__left {
+      h2 {
+        font-size: min(54px, max(27px + 2vw));
+        font-weight: 500;
+        columns: $secondBlack;
+        margin: 0px;
+      }
+
+      .up {
+        margin: 20px 0px;
+        font-size: min(20px, max(10px + 2vw));
+        font-weight: 400;
+        line-height: 32px;
+        color: $color555;
+      }
+
+      p {
+        margin: 0px 0px 50px 0px;
+        font-size: min(20px, max(10px + 2vw));
+        font-weight: 400;
+        line-height: 32px;
+        color: $color555;
+      }
+
+      div {
+        a {
+          padding: 16px 32px;
+          text-decoration: none;
+          color: $button-in-Color;
+          background-color: $buttonBackgraund;
+        }
+      }
+    }
+
+    .main__productCub2__right {
+
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
+  .main__productCub3 {
+    margin: 130px 0px;
+    display: flex;
+    gap: 54px;
+
+    .main__productCub3__left {
+      .main__productCub3__img {
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+
+    .main__productCub3__right {
+      .h_up {
+        margin: 30px 0px 0px 0px;
+        font-size: min(30px, max(15px + 2vw));
+        line-height: 40px;
+        font-weight: 500;
+        color: firstBlack;
+      }
+
+      .main__productCub3__right__stars {
+        margin: 15px 0px 45px 0px;
+      }
+
+      p {
+        font-size: min(20px, max(10px + 2vw));
+        font-weight: 400;
+        line-height: 32px;
+        color: $color555;
+      }
+
+      .h_down {
+        margin: 79px 0px 10px 0px;
+        font-size: min(30px, max(15px + 2vw));
+        line-height: 40px;
+        font-weight: 500;
+        color: firstBlack;
+      }
+
+      .main__productCub3__right__icon {
+        margin-top: 22px;
+
+        svg {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
   @media screen and (max-width:$mobileL ) {
     display: flex;
     flex-wrap: wrap;
@@ -415,6 +538,94 @@ body {
         }
       }
     }
+
+    .main__points {
+      margin: 50px 0px;
+      padding: 30px 0px;
+      gap: 67px;
+
+      .main__points__point {
+        .main__points__point__icon {
+          svg {
+            width: 100px;
+          }
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .main__productCub2 {
+
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
+
+      .main__productCub2__left {
+        text-align: center;
+
+        h2 {
+          font-size: 40px;
+          margin: 0px;
+        }
+
+        .up {
+          margin: 20px 0px;
+          font-size: 15px;
+          line-height: 16px;
+
+        }
+
+        p {
+          margin: 0px 0px 25px 0px;
+          font-size: 15px;
+          line-height: 16px;
+        }
+
+        div {
+          a {
+            padding: 8px 16px;
+          }
+        }
+      }
+
+      .main__productCub2__right {
+        img {
+          width: 500px;
+          height: 404px;
+          object-fit: contain;
+        }
+      }
+    }
+
+    .main__productCub3 {
+      flex-wrap: wrap-reverse;
+      justify-content: center;
+      text-align: center;
+      gap: 30px;
+      margin: 75px 0px;
+
+      .main__productCub3__left {
+        .main__productCub3__img {
+          img {
+            display: block;
+            width: 500px;
+            height: 404px;
+            object-fit: contain;
+          }
+        }
+      }
+
+      .main__productCub3__right {
+        .h_down {
+          margin: 60px 0px 10px 0px;
+        }
+      }
+    }
+
   }
 
   @media screen and (max-width:$mobileM) {
@@ -480,9 +691,213 @@ body {
         }
       }
     }
+
+    .main__points {
+      margin: 25px 0px;
+      padding: 15px 0px;
+      gap: 18px;
+
+      .main__points__point {
+        .main__points__point__icon {
+          svg {
+            width: 70px;
+          }
+        }
+
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+
+    .main__productCub2 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      .main__productCub2__left {
+        text-align: center;
+
+        h2 {
+          font-size: 30px;
+          margin: 0px;
+        }
+
+        .up {
+          margin: 10px 0px;
+          font-size: 10px;
+          line-height: 16px;
+        }
+
+        p {
+          margin: 0px 0px 20px 0px;
+          font-size: 10px;
+          line-height: 16px;
+        }
+
+        div {
+          a {
+            padding: 4px 8px;
+          }
+        }
+      }
+
+      .main__productCub2__right {
+        img {
+          width: 400px;
+          height: 323px;
+        }
+      }
+    }
+
+    .main__productCub3 {
+      margin-top: 35px;
+
+      .main__productCub3__left {
+        .main__productCub3__img {
+          img {
+            display: block;
+            width: 400px;
+            height: 323px;
+          }
+        }
+      }
+
+      .main__productCub3__right {
+        p {
+          font-size: 10px;
+          line-height: 16px;
+        }
+
+        .h_down {
+          margin-top: 30px;
+        }
+      }
+    }
   }
 }
 
+.footer__section {
+  background-color: #FAFAFA;
+  .footer__section__subscribe__block {
+    display: flex;
+    justify-content: center;
+    gap: 350px;
+    align-items: center;
+    margin: 80px 0px 60px 0px;
+
+    h2 {
+      margin: 0;
+      font-size: 36px;
+      font-weight: 500;
+      line-height: 46px;
+      color: $firstBlack;
+    }
+
+    .btn {
+      background-color: $button-in-Color;
+      display: flex;
+      gap: 160px;
+      max-width: 386px;
+
+      p {
+        margin: 18px 0px 18px 18px;
+        font-size: min(16px, max(8px + 2vw));
+        font-weight: 400;
+        line-height: 20px;
+        color: $color555;
+      }
+
+      .a {
+        background-color: $buttonBackgraund;
+        padding: 10px 20px;
+        margin: 8px 8px 8px 0px;
+        a {
+          text-decoration: none;
+          display: block;
+          font-size: min(14px, max(7px + 2vw));
+          font-weight: 500;
+          line-height: 20px;
+          color: $button-in-Color;
+        }
+      }
+    }
+  }
+
+  .footer__section__line {
+    text-align: center;
+  }
+
+  .footer__section__dudeshape__block {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    .dudeshape__block__item1 {
+      // .dudeshape__block__item__logo {}
+
+      p {
+        font-size: min(18px, max(9px + 2vw));
+        font-weight: 400;
+        line-height: 32px;
+        color: $firstBlack;
+        margin-bottom: 50px;
+      }
+    }
+
+    .dudeshape__block__item {
+      h6 {
+        margin: 0px 0px 39px 0px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        color: $firstBlack;
+      }
+
+      p {
+        a {
+          text-decoration: none;
+          font-style: min(16px, max(8px + 2vw));
+          font-weight: 400;
+          line-height: 20px;
+          color: $firstBlack;
+        }
+      }
+      .dudeshape__block__item__icon {
+        display: flex;
+        gap: 30px;
+      }
+    }
+  }
+
+  @media screen and (max-width:$mobileL) {
+    .footer__section__subscribe__block {
+      flex-wrap: wrap;
+      gap: 50px;
+    }
+  }
+
+  @media screen and (max-width:$mobileM) {
+    .footer__section__subscribe__block {
+      text-align: center;
+    }
+
+    .footer__section__dudeshape__block {
+      flex-wrap: wrap;
+      text-align: center;
+      .dudeshape__block__item1 {
+        width: 100%;
+      }
+
+      .dudeshape__block__item {
+        width: 100%;
+
+        .dudeshape__block__item__icon {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
 
 
 // NORMALIZE CSS
